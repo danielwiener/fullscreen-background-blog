@@ -68,9 +68,9 @@ jQuery.noConflict();
 // when the DOM is ready
 jQuery(document).ready(function($)  {
 		$.fn.supersized.options = {  
-			startwidth: 640,  
-			startheight: 480,
-			vertical_center: 1,
+			startwidth: 12,  
+			startheight: 8,
+		     vertical_center: 1,
 			slides : [
 				{image : '<?php bloginfo("stylesheet_directory"); ?>/images/<?php echo $dw_category_slug; ?>.jpg' }
 			]
@@ -79,15 +79,12 @@ jQuery(document).ready(function($)  {
     });
 </script>
 </head>
-  <div id="supersized"></div>
-<body <?php body_class(); ?>> 
+ 
+<body>
+	<div id="supersized"></div>  
 	<!-- <div id="content-wrapper">  -->
-  
 <div id="wrapper" class="hfeed">
-	 
 	<div id="header">
-		<div id="masthead">
-			<div id="branding" role="banner">
 				<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
 				<<?php echo $heading_tag; ?> id="site-title">
 					<span>
@@ -95,7 +92,7 @@ jQuery(document).ready(function($)  {
 					</span>
 				</<?php echo $heading_tag; ?>>
 				<div id="site-description"><a href=""><?php echo $dw_category_slug; ?><a/></div> 
-			</div><!-- #branding -->
+
 
 			<div id="access" role="navigation">
 			  <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
@@ -103,7 +100,7 @@ jQuery(document).ready(function($)  {
 				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
 				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 			</div><!-- #access -->
-		</div><!-- #masthead -->
+	   
 	</div><!-- #header -->
 
 	<div id="main">

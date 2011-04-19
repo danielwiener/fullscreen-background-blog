@@ -68,9 +68,11 @@ Website: www.buildinternet.com/project/supersized
 			}
 			if (options.vertical_center == 1){
 				t.children().css('left', (browserwidth - t.width())/2);
-				t.children().css('top', (browserheight - t.height())/2);
+			   // t.children().css('top', -500);
+			   // t.children().css('top', ((browserheight - t.height())/ratio) - 100); 
+				t.children().css('top', ((browserheight - t.height())/2)); 
 			}
-			return false;
+			// return false;
 		});
 	};
 		

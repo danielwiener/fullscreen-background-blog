@@ -352,17 +352,14 @@ a:hover {
 #site-title {
 	float: left;
 	font-size: 30px;
-	line-height: 36px;
+	line-height: 36px; 
 	margin: 0 0 5px 0;
-	width: 400px;
-	display: block;   
-	
-}
+	width: 400px;   
+	}
 #site-title a {
 	color: #000;
 	font-weight: bold;
 	text-decoration: none;
-	display: block;
 }
 #site-description {
 	clear: right;
