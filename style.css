@@ -69,11 +69,11 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 
 #container {
 	float: left;
-	margin: 0 -240px 0 0;
+	margin: 0 0 0 0;
 	width: 100%;
 }
 #content {
-	margin: 0 280px 0 20px;
+	margin: 0 20px 0 20px;
 }
 #primary,
 #secondary {
@@ -168,7 +168,7 @@ div.menu,
 #main,
 #wrapper {
 	margin: 0 auto;
-	width: 940px;
+	width: 700px;
 }
 #wrapper {
 	background: #fff;
