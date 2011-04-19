@@ -81,8 +81,10 @@ jQuery(document).ready(function($)  {
 </head>
 
 <body <?php body_class(); ?>> 
-	<div id="supersized"></div> 
+	<div id="content-wrapper">
+  
 <div id="wrapper" class="hfeed">
+	 
 	<div id="header">
 		<div id="masthead">
 			<div id="branding" role="banner">
