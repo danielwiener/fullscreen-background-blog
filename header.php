@@ -49,7 +49,14 @@
 	 * as styles, scripts, and meta tags.
 	 */
 	wp_head();
-	
+
+	global $post;
+	$categories = get_the_category($post->ID);
+	foreach ($categories as $category) {
+		$dw_category_slug = $category->slug;
+		$dw_category_name = $category->name;
+	} 
+
 ?> 
 <link rel="stylesheet" href="<?php bloginfo("stylesheet_directory"); ?>/css/supersized.css" type="text/css" media="screen" />
 
@@ -65,7 +72,7 @@ jQuery(document).ready(function($)  {
 			startheight: 480,
 			vertical_center: 1,
 			slides : [
-				{image : '/wp-content/themes/lenore/images/boats.jpg' }
+				{image : '<?php bloginfo("stylesheet_directory"); ?>/images/<?php echo $dw_category_slug; ?>.jpg' }
 			]
 		};
         $('#supersized').supersized(); 
