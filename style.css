@@ -70,7 +70,8 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #container {
 	float: left;
 	margin: 0 0 0 0;
-	width: 100%;
+	width: 100%; 
+	background-color:rgba(255,255,255,0.75);
 }
 #content {
 	margin: 0 20px 0 20px;
@@ -172,8 +173,8 @@ div.menu,
 }
 #wrapper {
 	/*background: #fff;*/
-	background-color:rgba(255,255,255,0.75);
-	margin-top: 20px;
+	/*background-color:rgba(255,255,255,0.75);*/
+	margin-top: 10px;
 	padding: 0 20px;
 }
 
@@ -339,14 +340,15 @@ a:hover {
 -------------------------------------------------------------- */
 
 #header {
-	padding: 30px 0 0 0;
+	padding: 0;
 }
 #site-title {
 	float: left;
 	font-size: 30px;
 	line-height: 36px;
-	margin: 0 0 18px 0;
-	width: 400px;
+	margin: 0 0 5px 0;
+	width: 400px;   
+	
 }
 #site-title a {
 	color: #000;
@@ -369,13 +371,13 @@ a:hover {
 	display: block;
 	float: left;
 	margin: 0 auto;
-	width: 940px;
+	width: 700px;
 }
 #access .menu-header,
 div.menu {
 	font-size: 13px;
 	margin-left: 12px;
-	width: 928px;
+	width: 680px;
 }
 #access .menu-header ul,
 div.menu ul {
