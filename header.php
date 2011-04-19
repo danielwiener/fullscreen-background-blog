@@ -58,11 +58,11 @@
 	} 
 
 ?> 
-<link rel="stylesheet" href="<?php bloginfo("stylesheet_directory"); ?>/css/supersized.css" type="text/css" media="screen" />
+<!-- <link rel="stylesheet" href="<?php bloginfo("stylesheet_directory"); ?>/css/supersized.css" type="text/css" media="screen" /> -->
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 
-<script type="text/javascript" src="<?php bloginfo("stylesheet_directory"); ?>/js/supersized.3.0.core.js"></script>
+<script type="text/javascript" src="<?php bloginfo("stylesheet_directory"); ?>/js/supersized.3.0.core.js"></script> 
 <script type="text/javascript"> 
 jQuery.noConflict(); 
 // when the DOM is ready
@@ -70,7 +70,7 @@ jQuery(document).ready(function($)  {
 		$.fn.supersized.options = {  
 			startwidth: 640,  
 			startheight: 480,
-			vertical_center: 1,
+			fit_landscape : 1,
 			slides : [
 				{image : '<?php bloginfo("stylesheet_directory"); ?>/images/<?php echo $dw_category_slug; ?>.jpg' }
 			]
@@ -81,7 +81,7 @@ jQuery(document).ready(function($)  {
 </head>
 
 <body <?php body_class(); ?>> 
-	<div id="content-wrapper">
+	<!-- <div id="content-wrapper">  -->
   
 <div id="wrapper" class="hfeed">
 	 
@@ -94,7 +94,7 @@ jQuery(document).ready(function($)  {
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 					</span>
 				</<?php echo $heading_tag; ?>>
-				<div id="site-description"><?php echo $dw_category_slug; ?></div>
+				<div id="site-description"><a href=""><?php echo $dw_category_slug; ?><a/></div> 
 			</div><!-- #branding -->
 
 			<div id="access" role="navigation">

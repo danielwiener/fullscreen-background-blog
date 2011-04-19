@@ -63,7 +63,7 @@ a img {
 -------------------------------------------------------------- */
 
 /*
-LAYOUT: Two columns
+LAYOUT: one column now
 DESCRIPTION: Two-column fixed layout with one sidebar right of content
 */
 
@@ -178,6 +178,7 @@ div.menu,
 	margin-top: 10px;
 	padding: 0 20px;
 }
+
 
 /* Structure the footer area */
 #footer-widget-area {
@@ -1354,4 +1355,16 @@ code {
 	.home .sticky {
 		border: none;
 	}
+} 
+
+#supersized{
+    position:fixed;
+   
+}
+#supersized img{ -ms-interpolation-mode: bicubic; }
+#supersized img{
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index: -1;
 }

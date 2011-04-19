@@ -38,8 +38,8 @@
 	</div><!-- #footer -->
  
 </div><!-- #wrapper --> 
-<div id="supersized"></div> 
- </div>    <!-- id="content-wrapper" -->
+  <div id="supersized"></div>
+ <!-- </div> -->    <!-- id="content-wrapper" -->
 
 <?php
 	/* Always have wp_footer() just before the closing </body>
