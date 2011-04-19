@@ -87,7 +87,8 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 }
 #footer {
 	clear: both;
-	width: 100%;
+	width: 100%; 
+	background-color:rgba(255,255,255,0.75); 
 }
 
 /*
@@ -341,6 +342,9 @@ a:hover {
 
 #header {
 	padding: 0;
+	background-color:rgba(200,255,245,0.75); 
+	display: block;
+	overflow: hidden;
 }
 #site-title {
 	float: left;
