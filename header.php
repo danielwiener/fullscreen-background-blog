@@ -92,7 +92,7 @@ jQuery(document).ready(function($)  {
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 					</span>
 				</<?php echo $heading_tag; ?>>
-				<div id="site-description"><?php bloginfo( 'description' ); ?></div>
+				<div id="site-description"><?php echo $dw_category_slug; ?></div>
 			</div><!-- #branding -->
 
 			<div id="access" role="navigation">
