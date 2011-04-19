@@ -1,0 +1,1 @@
+A theme for an artist's blog with a full screen background, using SuperSized 3 (this may change). And for now it is a child theme of TwentyTen.
