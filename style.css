@@ -171,7 +171,8 @@ div.menu,
 	width: 700px;
 }
 #wrapper {
-	background: #fff;
+	/*background: #fff;*/
+	background-color:rgba(255,255,255,0.75);
 	margin-top: 20px;
 	padding: 0 20px;
 }
