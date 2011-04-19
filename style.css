@@ -75,6 +75,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 }
 #content {
 	margin: 0 20px 0 20px;
+	padding: 0;
 }
 #primary,
 #secondary {
@@ -169,14 +170,15 @@ div.menu,
 #branding,
 #main,
 #wrapper {
-	margin: 0 auto;
+	margin: 0 auto; 
+	padding: 0;
 	width: 700px;
 }
 #wrapper {
 	/*background: #fff;*/
 	/*background-color:rgba(255,255,255,0.75);*/
-	margin-top: 10px;
-	padding: 0 20px;
+   
+	padding: 0 20px 0 20px;
 }
 
 
@@ -352,13 +354,15 @@ a:hover {
 	font-size: 30px;
 	line-height: 36px;
 	margin: 0 0 5px 0;
-	width: 400px;   
+	width: 400px;
+	display: block;   
 	
 }
 #site-title a {
 	color: #000;
 	font-weight: bold;
 	text-decoration: none;
+	display: block;
 }
 #site-description {
 	clear: right;

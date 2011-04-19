@@ -70,7 +70,7 @@ jQuery(document).ready(function($)  {
 		$.fn.supersized.options = {  
 			startwidth: 640,  
 			startheight: 480,
-			fit_landscape : 1,
+			vertical_center: 1,
 			slides : [
 				{image : '<?php bloginfo("stylesheet_directory"); ?>/images/<?php echo $dw_category_slug; ?>.jpg' }
 			]
@@ -79,7 +79,7 @@ jQuery(document).ready(function($)  {
     });
 </script>
 </head>
-
+  <div id="supersized"></div>
 <body <?php body_class(); ?>> 
 	<!-- <div id="content-wrapper">  -->
   

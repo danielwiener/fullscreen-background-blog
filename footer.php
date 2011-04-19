@@ -38,7 +38,7 @@
 	</div><!-- #footer -->
  
 </div><!-- #wrapper --> 
-  <div id="supersized"></div>
+ 
  <!-- </div> -->    <!-- id="content-wrapper" -->
 
 <?php
