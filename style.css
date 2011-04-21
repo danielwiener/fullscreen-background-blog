@@ -71,11 +71,13 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	float: left;
 	margin: 0 0 0 0;
 	width: 100%; 
-	background-color:rgba(255,255,255,0.75);
+	/*background-color:rgba(255,255,255,0.75); */
+	/*border: 1px solid blue;*/
 }
 #content {
-	margin: 0 20px 0 20px;
-	padding: 0;
+	margin: 0;
+	padding: 0;  
+	 /*border: 1px solid yellow;*/
 }
 #primary,
 #secondary {
@@ -90,6 +92,27 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	clear: both;
 	width: 100%; 
 	background-color:rgba(255,255,255,0.75); 
+}  
+
+#content .post {
+	background-color:rgba(255,255,255,0.75);
+	width: 640px;
+	padding: 20px 0 20px 20px; 
+	/*border: 1px solid green;*/
+	float: left;
+	margin: 0 0 20px 2px;
+   
+  
+} 
+
+#content .date { 
+	background-color:rgba(255,255,255,0.75);
+	padding: 4px;
+	float: left;
+	font-size: 12px;
+	color: #000;
+	clear: right;
+	 width: 74px; 
 }
 
 /*
@@ -172,14 +195,17 @@ div.menu,
 #wrapper {
 	margin: 0 auto; 
 	padding: 0;
-	width: 700px;
+    width: 750px;  
 	position: relative;  /*this was the answer to the disabel link problem*/
+   
 }
-#wrapper {
+#wrapper { 
+	/*width: 700px; */
 	/*background: #fff;*/
 	/*background-color:rgba(255,255,255,0.75);*/
    
-	padding: 0 20px 0 20px;
+   /* padding: 0 20px 0 20px;*/ 
+	 /*border: 1px solid red;*/
 }
 
 
@@ -364,7 +390,7 @@ a:hover {
 	height: 70px;
 	position: absolute;  
 	}
-h1#site-title  {
+div#site-title  {
 	  font-size: 20px;
 }
 #site-title a {
@@ -489,7 +515,8 @@ div.menu li {
 #main {
 	clear: both;
 	overflow: hidden;
-	padding: 40px 0 0 0;
+	padding: 10px 0 0 0;
+	/*border: 1px solid #999;*/
 }
 #content {
 	margin-bottom: 36px;
@@ -561,7 +588,7 @@ div.menu li {
 	background: #f2f7fc;
 }
 .hentry {
-	margin: 0 0 48px 0;
+	margin: 0 0 10px 0;
 }
 .home .sticky {
 	background: #f2f7fc;
@@ -574,8 +601,8 @@ div.menu li {
 	margin: 0 0 36px 0;
 }
 .page-title {
-	color: #000;
-	font-size: 14px;
+	color: red !important;
+	font-size: 35px;
 	font-weight: bold;
 	margin: 0 0 36px 0;
 }
