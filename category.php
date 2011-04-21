@@ -11,10 +11,6 @@ get_header(); ?>
 
 		<div id="container">
 			<div id="content" role="main">
-
-				<h1 class="page-title"><?php
-					printf( __( 'Category Archives: %s', 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-				?></h1>
 				<?php
 					$category_description = category_description();
 					if ( ! empty( $category_description ) )
@@ -29,4 +25,5 @@ get_header(); ?>
 
 			</div><!-- #content -->
 		</div><!-- #container -->
+
 <?php get_footer(); ?>

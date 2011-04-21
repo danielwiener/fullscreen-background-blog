@@ -81,22 +81,23 @@ jQuery(document).ready(function($)  {
 </head>
  
 <body>
-	<div id="supersized"></div>  
+	<div id="supersized"></div> 
+	<div id="header">
+				<h1 id="site-title">
+					<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				</h1>
+				<div id="site-description"><!-- <a href=""><?php echo $dw_category_slug; ?><a/> --><?php wp_nav_menu(); ?></div> 
+
+
+			
+	   
+	</div><!-- #header --> 
 	<!-- <div id="content-wrapper">  -->
 <div id="wrapper" class="hfeed">
-	<div id="header">
-				<div id="site-title">
-					<span><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-				</div>
-				<div id="site-description"><a href=""><?php echo $dw_category_slug; ?><a/></div> 
-
-
-			<div id="access" role="navigation">
-			 
-				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
-				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
-			</div><!-- #access -->
-	   
-	</div><!-- #header -->
+                  	<!-- <div id="access" role="navigation">   -->
+	 
+		<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
+		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+	<!-- </div> --><!-- #access -->
 
 	<div id="main">

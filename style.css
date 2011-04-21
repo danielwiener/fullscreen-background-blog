@@ -345,29 +345,60 @@ a:hover {
 -------------------------------------------------------------- */
 
 #header {
-	padding: 0;
-	background-color:rgba(200,255,245,0.75); 
+	padding: 0; 
+	margin: 0 0 0 0;
+	/*background-color:rgba(200,200,200,0.45);*/  
 	display: block;
-	overflow: hidden;
+	overflow: hidden; 
+	position: relative;
+/*	border-bottom: 1px solid #fff;*/
 }
 #site-title {
 	float: left;
-	font-size: 30px;
-	line-height: 36px; 
-	margin: 0 0 5px 0;
-	width: 400px;   
+
+	/*line-height: 28px;*/ 
+	margin: 0;
+	padding: 5px 20px 0 20px;
+	width: 180px; 
+	background-color:rgba(100,100,100,0.45);
+	height: 70px;
+	position: absolute;  
 	}
+h1#site-title  {
+	  font-size: 20px;
+}
 #site-title a {
-	color: #000;
+	color: #000; 
+	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
 }
 #site-description {
-	clear: right;
-	float: right;
-	font-style: italic;
-	margin: 15px 0 18px 0;
-	width: 220px;
+	/*clear: right;*/
+	float: left;
+	/*font-style: italic;*/
+	margin: 0;
+	margin: 0 0 0 221px;
+    width: 100%; 
+	background-color:rgba(150,150,150,0.45);
+
+}  
+
+#site-description ul{ 
+	list-style: none;
+	padding: 7px 0 10px 15px;
+	margin: 0;
+} 
+
+#site-description ul li{ 
+   font: 14px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	padding: 0 0 2px 0;
+	margin: 0;
+} 
+
+#site-description ul li a { 
+	text-decoration: none;
+	color: #333;
 }
 
 /* =Menu
