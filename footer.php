@@ -12,7 +12,7 @@
 ?>  
  
 	</div><!-- #main -->
-    
+     </div><!-- #wrapper --> 
 	<div id="footer" role="contentinfo">
 		<div id="colophon">
 
@@ -37,7 +37,7 @@
 		</div><!-- #colophon -->
 	</div><!-- #footer -->
  
-</div><!-- #wrapper --> 
+
  
  <!-- </div> -->    <!-- id="content-wrapper" -->
 
