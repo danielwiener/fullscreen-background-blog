@@ -173,6 +173,7 @@ div.menu,
 	margin: 0 auto; 
 	padding: 0;
 	width: 700px;
+	position: relative;  /*this was the answer to the disabel link problem*/
 }
 #wrapper {
 	/*background: #fff;*/
@@ -211,7 +212,7 @@ div.menu,
 
 /* Main global 'theme' and typographic styles */
 body {
-	background: #f1f1f1;
+	background:#000;
 }
 body,
 input,
