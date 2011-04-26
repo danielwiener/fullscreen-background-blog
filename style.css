@@ -200,7 +200,6 @@ code {
 /* The main theme structure */
 #access .menu-header,
 div.menu,
-#colophon,
 #branding,
 #main,
 #wrapper {
@@ -222,13 +221,30 @@ div.menu,
 
 /* Structure the footer area */
 #footer-widget-area {
-	overflow: hidden;
+	overflow: hidden; 
+	
 }
 #footer-widget-area .widget-area {
 	float: left;
 	margin-right: 20px;
-	width: 220px;
+    width: 220px; 
+	background-color:rgba(255,255,255,0.35);
 }
+
+#footer-widget-area ul{
+    padding: 5px 5px 0 10px; 
+}
+
+#footer-widget-area ul ul{
+	list-style: none;  
+	margin: 0;
+	padding: 0;
+} 
+
+#footer-widget-area ul ul li {
+
+}
+
 #footer-widget-area #fourth {
 	margin-right: 0;
 }
@@ -1294,13 +1310,16 @@ h3#reply-title {
 -------------------------------------------------------------- */
 
 #footer {
-	margin-bottom: 20px;
+	margin: 0px;
+   /* border: 1px solid red; */  
+	border-top: 4px solid #000;
 }
 #colophon {
-	border-top: 4px solid #000;
 	margin-top: -4px;
 	overflow: hidden;
 	padding: 18px 0;
+	margin: 0 auto;
+	width: 940px; 
 }
 #site-info {
 	font-weight: bold;
