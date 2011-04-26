@@ -68,8 +68,8 @@ jQuery.noConflict();
 // when the DOM is ready
 jQuery(document).ready(function($)  {
 		$.fn.supersized.options = {  
-			startwidth: 12,  
-			startheight: 8,
+			startwidth: 4,  
+			startheight: 3,
 		     vertical_center: 1,
 			slides : [
 				{image : '<?php bloginfo("stylesheet_directory"); ?>/images/<?php echo $dw_category_slug; ?>.jpg' }

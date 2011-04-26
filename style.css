@@ -386,7 +386,8 @@ a:hover {
 	margin: 0;
 	padding: 5px 20px 0 20px;
 	width: 180px; 
-	background-color:rgba(100,100,100,0.45);
+	/*background-color:rgba(100,100,100,0.45);*/  /*darkish gray*/
+	background-color:rgba(255,255,255,0.65);
 	height: 70px;
 	position: absolute;  
 	}
@@ -394,7 +395,8 @@ div#site-title  {
 	  font-size: 20px;
 }
 #site-title a {
-	color: #000; 
+	/*color: #000;*/ /*black*/
+	color: #35397F; 
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
@@ -406,7 +408,8 @@ div#site-title  {
 	margin: 0;
 	margin: 0 0 0 221px;
     width: 100%; 
-	background-color:rgba(150,150,150,0.45);
+	/*background-color:rgba(150,150,150,0.45);*/ /*light-gray*/
+	background-color:rgba(255,255,255,0.55);
 
 }  
 
@@ -422,9 +425,10 @@ div#site-title  {
 	margin: 0;
 } 
 
-#site-description ul li a { 
+#site-description ul li a {   /*this is for the menu*/
 	text-decoration: none;
-	color: #333;
+   /* color: #333; */ /*gray*/
+	color: #35397F;
 }
 
 /* =Menu
@@ -601,7 +605,7 @@ div.menu li {
 	margin: 0 0 36px 0;
 }
 .page-title {
-	color: red !important;
+	color: #E43A00 !important;
 	font-size: 35px;
 	font-weight: bold;
 	margin: 0 0 36px 0;
@@ -614,7 +618,7 @@ div.menu li {
 }
 .page-title a:link,
 .page-title a:visited {
-	color: #888;
+	color: #E43A00	;
 	text-decoration: none;
 }
 .page-title a:active,
