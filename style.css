@@ -1030,6 +1030,7 @@ img.aligncenter {
 -------------------------------------------------------------- */
 #comments {
 	clear: both;
+	background-color:rgba(255,255,255,0.75);
 }
 #comments .navigation {
 	padding: 0 0 18px 0;
