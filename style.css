@@ -424,12 +424,9 @@ a:hover {
 }
 #site-title {
 	float: left;
-
-	/*line-height: 28px;*/ 
 	margin: 0;
 	padding: 5px 20px 0 20px;
 	width: 180px; 
-	/*background-color:rgba(100,100,100,0.45);*/  /*darkish gray*/
 	background-color:rgba(255,255,255,0.65);
 	height: 70px;
 	position: absolute;  
@@ -437,12 +434,15 @@ a:hover {
 div#site-title  {
 	  font-size: 20px;
 }
-#site-title a {
-	/*color: #000;*/ /*black*/
-   /* color: #35397F;*/  /*dark gray blue */
-	color: #03075F; 
+#site-title a:link, #site-title a:visited {
+	color: #03075F; /*dark blue*/
 	font-size: 20px;
 	font-weight: bold;
+	text-decoration: none;
+}   
+
+#site-title a:hover, #site-title a:active, #site-description ul li a:hover, #site-description ul li a:active  {
+	color: #E43A00 !important;  /*red*/
 	text-decoration: none;
 }
 #site-description {
@@ -468,11 +468,9 @@ div#site-title  {
 	margin: 0;
 } 
 
-#site-description ul li a {   /*this is for the menu*/
+#site-description ul li a:link, #site-description ul li a:visited {   /*this is for the menu*/
 	text-decoration: none;
-   /* color: #333; */ /*gray*/
-	/*color: #35397F;*/  /*dark gray blue*/
-	color: #03075F; 
+	color: #03075F;   /*dark blue*/
 } 
 
 #searchform {
