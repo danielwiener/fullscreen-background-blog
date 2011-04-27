@@ -93,8 +93,8 @@ jQuery(document).ready(function($)  {
 				<div id="site-title">
 					<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</div>
-				<div id="site-description"><!-- <a href=""><?php echo $dw_category_slug; ?><a/> --><?php wp_nav_menu(); ?></div> 
-
+				<div id="site-description"><!-- <a href=""><?php echo $dw_category_slug; ?><a/> --><?php wp_nav_menu(); ?> <div id="searchform"><?php get_sidebar('searchform'); ?></div></div> 
+                
 
 			
 	   
