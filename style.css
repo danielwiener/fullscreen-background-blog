@@ -81,7 +81,8 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #content {
 	margin: 0;
 	padding: 0;  
-	 /*border: 1px solid yellow;*/
+/*	 border: 1px solid yellow;*/
+	overflow: hidden;
 }
 #primary,
 #secondary {
@@ -99,15 +100,13 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	position: relative; 
 }  
 
-#content .post {
+#content .post, #content .page {
 	background-color:rgba(255,255,255,0.75);
 	width: 640px;
 	padding: 0px 0 20px 0px; 
-	/*border: 1px solid green;*/
+/*	border: 1px solid green; */
 	float: left;
-	margin: 0 0 20px 1px;
-   
-  
+	margin: 0 0 20px 1px; 
 } 
 
 #content .date { 
@@ -118,14 +117,10 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	font-size: 12px;
 	line-height: 30px;
 	font-style: oblique;
-	/*color: #000;*/
 	color: #03075F;
-	clear: right;
 	 width: 74px;
 	font-weight: bold;
 	text-align: right;
-	/*-moz-border-radius-topleft: 10px;
-		-webkit-border-top-left-radius: 10px;*/
 	-moz-border-radius-bottomleft: 10px;
 	-webkit-border-bottom-left-radius: 10px; 
 	height: 30px;

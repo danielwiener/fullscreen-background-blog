@@ -52,9 +52,13 @@
 
 	global $post;
 	$categories = get_the_category($post->ID);
+	if ( $categories ) {
 	foreach ($categories as $category) {
 		$dw_category_slug = $category->slug;
 		$dw_category_name = $category->name;
+	}  
+	} else {
+		$dw_category_slug = 'utopia';
 	} 
 
 ?> 
