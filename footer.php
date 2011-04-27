@@ -6,8 +6,8 @@
  * after.  Calls sidebar-footer.php for bottom widgets.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage Fullscreen Background Blog
+ * @since Fullscreen Background Blog 1.0
  */
 ?>  
  
@@ -23,18 +23,19 @@
 	get_sidebar( 'footer' );
 ?>
 
-			<div id="site-info">
+		  <div id="site-info">
 				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php bloginfo( 'name' ); ?>
-				</a>
+				</a>        	<div id="site-generator">
+				<?php do_action( 'twentyten_credits' ); ?>
+				Site by <a href="http://danielwiener.com">Daniel Wiener</a> &amp; <a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">WordPress</a>
+			</div><!-- #site-generator -->
 			</div><!-- #site-info -->
 
-			<div id="site-generator">
-				<?php do_action( 'twentyten_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyten' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyten' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s.', 'twentyten' ), 'WordPress' ); ?></a>
-			</div><!-- #site-generator -->
+		 
 
-		</div><!-- #colophon -->
+		</div><!-- #colophon --> 
+		
 	</div><!-- #footer -->
  
 

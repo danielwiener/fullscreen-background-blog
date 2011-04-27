@@ -1,4 +1,4 @@
-<?php
+                                                                              <?php
 /**
  * The loop that displays posts.
  *

@@ -5,8 +5,8 @@
  * Displays all of the <head> section and everything up till <div id="main">
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage Fullscreen Background Blog
+ * @since Fullscreen Background Blog 1.0
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -78,6 +78,13 @@ jQuery(document).ready(function($)  {
         $('#supersized').supersized(); 
     });
 </script>
+<script type="text/javascript" src="<?php bloginfo("stylesheet_directory"); ?>/js/equal_heights.js"></script> 
+<script type="text/javascript">
+		 jQuery.noConflict();
+		jQuery(document).ready(function() {
+	jQuery('#footer-widget-area').equalHeights(true);
+	});
+	</script>
 </head>
  
 <body>

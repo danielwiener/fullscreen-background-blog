@@ -222,7 +222,10 @@ div.menu,
 
 /* Structure the footer area */
 #footer-widget-area {
-	overflow: hidden; 
+	overflow: hidden;
+	margin: 0 auto;
+	width: 940px;
+	margin-bottom: 20px; 
 	
 }
 #footer-widget-area .widget-area {
@@ -230,7 +233,7 @@ div.menu,
 	margin-right: 20px;
     width: 220px; 
 	background-color:rgba(255,255,255,0.35);
-	border-bottom: 2px solid #03075F;
+	/*border-bottom: 2px solid #03075F;*/
 }
 
 #footer-widget-area ul{
@@ -254,11 +257,16 @@ div.menu,
 	float: left;
 	font-size: 14px;
 	font-weight: bold;
-	width: 700px;
+	width: 100%; 
+	padding: 10px 10px 10px 10px;
+	background-color:rgba(0,0,0,0.25);
 }
 #site-generator {
 	float: right;
-	width: 220px;
+	/*width: 400px;*/
+	/*padding: 10px 10px 10px 0;*/ 
+	margin-right: 20px;
+   
 }
 
 
@@ -1321,31 +1329,29 @@ h3#reply-title {
 #colophon {
 	margin-top: -4px;
 	overflow: hidden;
-	padding: 18px 0;
-	margin: 0 auto;
-	width: 940px; 
+	padding: 18px 0 0 0;
+ 
 }
 #site-info {
 	font-weight: bold;
 }
 #site-info a {
-	color: #000;
+	color: #E43A00;
 	text-decoration: none;
 }
 #site-generator {
-	font-style: italic;
 	position: relative;
+	text-align: right;
+	padding: 0 0 10px 0;
 }
 #site-generator a {
-	background: url(images/wordpress.png) center left no-repeat;
-	color: #666;
+	color: #E43A00;
 	display: inline-block;
 	line-height: 16px;
-	padding-left: 20px;
 	text-decoration: none;
 }
 #site-generator a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 img#wpstats {
 	display: block;

@@ -9,14 +9,15 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage Fullscreen Background Blog
+ * @since Fullscreen Background Blog 1.0
  */
 
 get_header(); ?>
 
 		<div id="container">
-			<div id="content" role="main">
+			<div id="content" role="main">  
+				<h1 class="page-title">New &amp; Upcoming</h1>
 			<?php
 			/* Run the loop to output the posts.
 			 * If you want to overload this in a child theme then include a file
