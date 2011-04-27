@@ -10,7 +10,10 @@ License: GNU General Public License
 License URI: license.txt
 Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu, fullscreen, SuperSized
 */
-
+/*
+* color: #03075F; dark blue
+*
+*/
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
@@ -1004,13 +1007,22 @@ img.aligncenter {
 }
 .nav-previous {
 	float: left;
-	width: 50%;
+	width: 47%;
+	padding: 1% 0 0 2%;
+/*	border: 1px solid red;*/ 
 }
 .nav-next {
 	float: right;
 	text-align: right;
-	width: 50%;
-}
+	width: 48%;
+ /*   border: 1px solid #999;*/ 
+	padding: 1% 2% 0 0;
+}  
+
+/*.nav-next span{
+	padding: 0 0 0 10px;
+	border: 1px solid #999;
+}   */
 #nav-above {
 	margin: 0 0 18px 0;
 }
@@ -1023,6 +1035,7 @@ img.aligncenter {
 }
 #nav-below {
 	margin: -18px 0 0 0;
+	border-top: 1px solid #03075F;;
 }
 
 
