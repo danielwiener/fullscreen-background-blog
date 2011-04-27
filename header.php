@@ -57,7 +57,7 @@
 		$dw_category_slug = $category->slug;
 		$dw_category_name = $category->name;
 	}  
-	} else {
+	}else {
 		$dw_category_slug = 'utopia';
 	} 
 
