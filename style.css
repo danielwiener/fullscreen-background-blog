@@ -12,7 +12,7 @@ Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-backgr
 */
 /*
 * color: #03075F; dark blue
-*
+* #E43A00 red, for links, for big category title
 */
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
@@ -991,19 +991,20 @@ img.aligncenter {
 -------------------------------------------------------------- */
 
 .navigation {
-	color: #888;
-	font-size: 12px;
+	color: #E43A00;
+	font-size: 13px;
 	line-height: 18px;
+	font-weight: bold;
 	overflow: hidden;
 }
 .navigation a:link,
 .navigation a:visited {
-	color: #888;
+	color: #E43A00;
 	text-decoration: none;
 }
 .navigation a:active,
 .navigation a:hover {
-	color: #ff4b33;
+	color: #03075F;
 }
 .nav-previous {
 	float: left;
