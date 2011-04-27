@@ -24,7 +24,11 @@ get_header(); ?>
 			 * called loop-index.php and that will be used instead.
 			 */
 			 get_template_part( 'loop', 'index' );
-			?>
+			?> 
+			<?php if ( $wp_query->max_num_pages > 1 ) : ?>
+			<div class="date">Pages</div> 
+			<div class="post"><?php numeric_pagination(); ?></a></div> 
+			<?php endif; ?>
 			</div><!-- #content -->
 		</div><!-- #container -->
 <?php get_footer(); ?>

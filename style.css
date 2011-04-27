@@ -1524,3 +1524,32 @@ code {
     position:absolute;
     z-index: -1;
 }
+
+/* =pagination from Gravy by http://www.darrenhoyt.com
+-------------------------------------------------------------- */
+
+#archive_pagination {
+	overflow: hidden;
+	padding: 20px;
+	text-align: center
+	}
+	
+.current-numeric-page {
+	padding: 5px 8px;
+	}
+	
+#archive_pagination a, #archive_pagination a:visited {
+	border:1px solid #CCC;
+	padding: 5px 8px;
+	text-decoration: none;
+	color: #888;
+	}
+	
+#archive_pagination a:hover {
+	background: #f5f5f5;
+	}
+
+#archive_pagination a:active {
+	background:#e6e6e6;
+	border-color:#bebebe;
+	}

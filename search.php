@@ -29,7 +29,11 @@ get_header(); ?>
 						<?php get_search_form(); ?>
 					</div><!-- .entry-content -->
 				</div><!-- #post-0 -->
-<?php endif; ?>
+<?php endif; ?> 
+				<?php if ( $wp_query->max_num_pages > 1 ) : ?>
+					<div class="date">Pages</div> 
+					<div class="post"><?php numeric_pagination(); ?></a></div> 
+				<?php endif; ?> 
 			</div><!-- #content -->
 		</div><!-- #container -->
 <?php get_footer(); ?>
