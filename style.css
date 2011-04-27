@@ -11,8 +11,9 @@ License URI: license.txt
 Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu, fullscreen, SuperSized
 */
 /*
-* color: #03075F; dark blue
-* #E43A00 red, for links, for big category title
+* #03075F - dark blue - headlines and links for next/previous
+* #E43A00 - red, for links, for big category title 
+* #CDCDDF - light blue
 */
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
@@ -450,7 +451,7 @@ div#site-title  {
 	/*font-style: italic;*/
 	margin: 0;
 	margin: 0 0 0 221px;
-    width: 100%; 
+    width: 84%; 
 	/*background-color:rgba(150,150,150,0.45);*/ /*light-gray*/
 	background-color:rgba(255,255,255,0.55);
 }  
@@ -472,7 +473,44 @@ div#site-title  {
    /* color: #333; */ /*gray*/
 	/*color: #35397F;*/  /*dark gray blue*/
 	color: #03075F; 
-}
+} 
+
+#searchform {
+    float: right;  
+/*margin: 0 0 0 80%; */ 
+padding: 1% 4% 0 0;
+}   
+
+#searchform .searchfield {
+	background: #CDCDDF !important;  /*light blue*/
+	padding:5px;
+	border-width:1px;
+	border-style:solid;
+	border-color: #6d6d6d #bfbfbf #efefef #6d6d6d; 
+	width: 150px;
+	height: 20px;
+	}    
+	
+	.button {
+		padding: 6px 10px;
+		background:#03075F;
+		color:#CDCDDF !important;  /*light blue*/
+		font-size:1.2em;
+		font-weight: bold;
+		border-width:1px;
+		border-style:solid;
+		border-color: #6d6d6d #bfbfbf #efefef #6d6d6d;
+		margin: 0 0 0 5px;
+		}
+
+	.button:hover {
+		background:#333;
+		color: #aaa !important;
+		}
+
+	.button:active {
+		background:#000;
+		}
 
 /* =Menu
 -------------------------------------------------------------- */
