@@ -414,7 +414,7 @@ a:hover {
 	/*background-color:rgba(200,200,200,0.45);*/  
 	display: block;
 	overflow: hidden; 
-	position: relative;
+	position: relative; 
 /*	border-bottom: 1px solid #fff;*/
 }
 #site-title {
@@ -448,7 +448,8 @@ div#site-title  {
 	margin: 0 0 0 221px;
     width: 84%; 
 	/*background-color:rgba(150,150,150,0.45);*/ /*light-gray*/
-	background-color:rgba(255,255,255,0.55);
+	background-color:rgba(255,255,255,0.55); 
+	height: 70px;
 }  
 
 #site-description ul{ 
