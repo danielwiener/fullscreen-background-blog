@@ -1077,6 +1077,10 @@ img.aligncenter {
 #comments {
 	clear: both;
 	background-color:rgba(255,255,255,0.75);
+	width: 630px;
+	float: right;
+	margin-right: 26px;
+	padding: 0 0 0 10px;
 }
 #comments .navigation {
 	padding: 0 0 18px 0;
@@ -1105,7 +1109,14 @@ h3#comments-title {
 .commentlist li:last-child {
 	border-bottom: none;
 	margin-bottom: 0;
+} 
+/*#comments .comment-body {
+	background: #fff; 
+	margin-right: 10px;
 }
+#comments .comment-body p{
+	 padding-left: 5px;
+	} */
 #comments .comment-body ul,
 #comments .comment-body ol {
 	margin-bottom: 18px;
@@ -1198,13 +1209,24 @@ a.comment-edit-link:hover {
 /* Comments form */
 input[type=submit] {
 	color: #333;
-}
+} 
+/*#respond {
+	background-color:rgba(255,255,255,0.75);
+	width: 620px;
+	padding: 0px 20px 20px 20px; 
+	border: 1px solid green;   
+	float: right;
+	border-top: 1px solid #e7e7e7;
+	margin: 24px 0;
+	overflow: hidden;
+	position: relative; 
+}   */
 #respond {
 	border-top: 1px solid #e7e7e7;
 	margin: 24px 0;
 	overflow: hidden;
 	position: relative;
-}
+}   
 #respond p {
 	margin: 0;
 }
