@@ -76,20 +76,4 @@ function numeric_pagination ($pageCount = 5, $query = null) {
 <?php } ?>
 	</div>
 <?php } /* end of pagination */     
-
-// can't figure this out right now
-// function dw_get_category() {
-// 	global $post;
-// 	$categories = get_the_category($post->ID);
-// 	if ( $categories ) {
-// 	foreach ($categories as $category) {
-// 		$dw_category_slug = $category->slug;
-// 		$dw_category_name = $category->name;
-// 	}  
-// 	} else {
-// 		$dw_category_slug = 'utopia';
-// 	}
-// 	$dw_category = array('name' => '$dw_category_name', 'slug' => ' $dw_category_slug');
-// 	return $dw_category;
-// 	
-// }        
+?> 
