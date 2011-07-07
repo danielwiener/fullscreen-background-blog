@@ -93,6 +93,9 @@ jQuery(document).ready(function($)  {
 </head>
  
 <body>
+	<?php
+	// global $dw_category;
+	// 	 echo $dw_category['name']; ?>
 	<div id="supersized"></div> 
 	<div id="header">
 				<div id="site-title">
