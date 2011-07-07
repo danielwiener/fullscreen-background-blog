@@ -34,6 +34,8 @@
              
 			<div class="entry-summary">
 				<?php the_content(); ?>
+				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?></span>
 			</div><!-- .entry-summary -->
+			  
         </div><!-- #post-## -->
 <?php endwhile; // End the loop. Whew. ?>
