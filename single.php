@@ -7,13 +7,7 @@
  * @since Fullscreen Background Blog 1.0
  */
 
-get_header(); 
-   	global $post;
-	$categories = get_the_category($post->ID);
-	foreach ($categories as $category) {
-	   //$dw_category_slug = $category->slug;
-		$dw_category_name = $category->name;
-	}
+get_header();        
 	?>
 
 		<div id="container">

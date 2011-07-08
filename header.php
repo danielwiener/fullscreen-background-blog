@@ -49,18 +49,10 @@
 	 * as styles, scripts, and meta tags.
 	 */
 	wp_head();
-
- 	global $post;
- 	$categories = get_the_category($post->ID);
- 	if ( $categories ) {
- 	foreach ($categories as $category) {
- 		$dw_category_slug = $category->slug;
- 		// $dw_category_name = $category->name;
- 	}  
- 	}else {
- 		$dw_category_slug = 'utopia';
- 	} 
- 	         
+    global $dw_category_name; //need this so that I can use the variable in single.php so now in theory there is one query for categories.
+	$the_post_cats = dw_get_category();
+	$dw_category_name = $the_post_cats['name'];
+	$dw_category_slug = $the_post_cats['slug']; 	         
 
 ?> 
 <!-- <link rel="stylesheet" href="<?php bloginfo("stylesheet_directory"); ?>/css/supersized.css" type="text/css" media="screen" /> -->
@@ -93,9 +85,6 @@ jQuery(document).ready(function($)  {
 </head>
  
 <body>
-	<?php
-	// global $dw_category;
-	// 	 echo $dw_category['name']; ?>
 	<div id="supersized"></div> 
 	<div id="header">
 				<div id="site-title">
