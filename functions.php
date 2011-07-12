@@ -158,6 +158,70 @@ wp_add_dashboard_widget('dw_instructions_dashboard_widget', 'General Instruction
 
 // Hook into the 'wp_dashboard_setup' action to register our other functions
 
-add_action('wp_dashboard_setup', 'dw_add_dashboard_widgets' );
+add_action('wp_dashboard_setup', 'dw_add_dashboard_widgets' ); 
+
+
+//http://techmasher.co.cc/customizing-the-wordpress-admin-area/ 
+//http://www.strangework.com/2010/03/24/how-to-hide-an-admin-menu-in-wordpress/
+// http://codex.wordpress.org/Function_Reference/remove_meta_box
+	
+	
+function dw_remove_many_meta_boxes() { 
+	global $current_user;
+	get_currentuserinfo();	
+   	
+		if($current_user->user_login != 'danielwiener') {
+		
+			remove_meta_box( 'postcustom' , 'post' , 'normal' );
+		  //  remove_meta_box( 'commentstatusdiv' , 'post' , 'normal' );// - Comments status metabox.
+		  //  remove_meta_box( 'commentsdiv' , 'post' , 'normal' );// - Comments metabox.
+		    remove_meta_box( 'slugdiv' , 'post' , 'normal' );// - Slug metabox.
+		    remove_meta_box( 'revisionsdiv' , 'post' , 'normal' );// - Revisions metabox.
+		    remove_meta_box( 'authordiv' , 'post' , 'normal' );// - Author metabox.
+		    remove_meta_box( 'postcustom' , 'post' , 'normal' );// - Custom fields metabox.
+		    //remove_meta_box( 'postexcerpt' , 'post' , 'normal' );// - Excerpt metabox.
+		    remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' );// - Trackbacks metabox.
+		    //remove_meta_box( 'postimagediv' , 'post' , 'side' );// - Featured image metabox.
+		    remove_meta_box( 'formatdiv' , 'post' , 'side' );// - Formats metabox.
+		    remove_meta_box( 'tagsdiv-post_tag' , 'post' , 'side' );// - Tags metabox.
+		  //  remove_meta_box( 'categorydiv' , 'post' , 'side' );// - Categories metabox. 
+
+		}  //if current user                                        
+
+}  // remove meta boxes function
+add_action( 'do_meta_boxes' , 'dw_remove_many_meta_boxes' );
+
+add_action( 'admin_menu', 'my_remove_menu_pages' );
+
+
+// remove links and tools menus
+function my_remove_menu_pages() {
+			 
+	global $current_user;
+	get_currentuserinfo();			
+	
+		if($current_user->user_login != 'danielwiener') { 
+			remove_menu_page('link-manager.php');
+			remove_menu_page('tools.php');
+		} //end if current user.	
+} //end function
+
+// add google analytics to footer
+function add_google_analytics() {
+echo '<script type="text/javascript">';
+echo "\n";
+echo '  var _gaq = _gaq || [];';
+echo '  _gaq.push(["_setAccount", "UA-24505776-1"]);';
+echo '  _gaq.push(["_trackPageview"]);';
+echo "\n";
+echo '  (function() {';
+echo '    var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;';
+echo '    ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";';
+echo '    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);';
+echo '  })();';
+echo "\n";
+echo '</script>';
+}
+add_action('wp_footer', 'add_google_analytics');
 
 ?>
