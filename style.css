@@ -96,12 +96,12 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #footer {
 	clear: both;
 	width: 100%; 
-	background-color:rgba(255,255,255,0.75);
+	background-color:rgba(255,255,255,0.90);
 	position: relative; 
 }  
 
 #content .post, #content .page {
-	background-color:rgba(255,255,255,0.75);
+	background-color:rgba(255,255,255,0.90);
 	width: 640px;
 	padding: 0px 0 20px 0px; 
 /*	border: 1px solid green; */
@@ -111,7 +111,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 
 #content .date { 
 	font-family: "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
-	background-color:rgba(255,255,255,0.75);
+	background-color:rgba(255,255,255,0.90);
 	padding: 4px;
 	float: left;
 	font-size: 12px;
@@ -422,8 +422,8 @@ a:hover {
 	margin: 0;
 	padding: 5px 20px 0 20px;
 	width: 180px; 
-	background-color:rgba(255,255,255,0.65);
-	height: 70px;
+	background-color:rgba(255,255,255,0.85);
+	height: 85px;
 	position: absolute;  
 	}
 div#site-title  {
@@ -448,8 +448,8 @@ div#site-title  {
 	margin: 0 0 0 221px;
     width: 84%; 
 	/*background-color:rgba(150,150,150,0.45);*/ /*light-gray*/
-	background-color:rgba(255,255,255,0.55); 
-	height: 70px;
+	background-color:rgba(255,255,255,0.85); 
+	height: 85px;
 }  
 
 #site-description ul{ 
@@ -1076,7 +1076,7 @@ img.aligncenter {
 -------------------------------------------------------------- */
 #comments {
 	clear: both;
-	background-color:rgba(255,255,255,0.75);
+	background-color:rgba(255,255,255,0.90);
 	width: 630px;
 	float: right;
 	margin-right: 26px;
