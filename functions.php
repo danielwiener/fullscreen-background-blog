@@ -172,7 +172,6 @@ function dw_remove_many_meta_boxes() {
    	
 		if($current_user->user_login != 'danielwiener') {
 		
-			remove_meta_box( 'postcustom' , 'post' , 'normal' );
 		  //  remove_meta_box( 'commentstatusdiv' , 'post' , 'normal' );// - Comments status metabox.
 		  //  remove_meta_box( 'commentsdiv' , 'post' , 'normal' );// - Comments metabox.
 		    remove_meta_box( 'slugdiv' , 'post' , 'normal' );// - Slug metabox.
@@ -183,7 +182,7 @@ function dw_remove_many_meta_boxes() {
 		    remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' );// - Trackbacks metabox.
 		    //remove_meta_box( 'postimagediv' , 'post' , 'side' );// - Featured image metabox.
 		    remove_meta_box( 'formatdiv' , 'post' , 'side' );// - Formats metabox.
-		    remove_meta_box( 'tagsdiv-post_tag' , 'post' , 'side' );// - Tags metabox.
+		    //remove_meta_box( 'tagsdiv-post_tag' , 'post' , 'side' );// - Tags metabox.
 		  //  remove_meta_box( 'categorydiv' , 'post' , 'side' );// - Categories metabox. 
 
 		}  //if current user                                        
