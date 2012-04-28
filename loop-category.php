@@ -28,7 +28,17 @@
 	 */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-        <div class="date"><?php echo get_the_date('m/j/y'); ?></div>
+        <div class="date"><?php echo get_the_date('m/j/y'); ?>
+   		   <?php // $tags = get_the_tags(); 
+
+			// print_r($tags);?>  <div class="tags_cloud"> 
+			<?php // print_r(wp_generate_tag_cloud( get_the_tags()) );  
+		   
+			if ( function_exists( 'nk_wp_tag_cloud' ) ) {
+					echo nk_wp_tag_cloud( 'single=yes' );
+				}
+		 ?></div>
+	</div>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
              

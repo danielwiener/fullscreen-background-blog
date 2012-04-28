@@ -13,7 +13,16 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 				
-                <div class="date"><?php echo get_the_date('m/j/y'); ?></div> 
+                <div class="date"><?php echo get_the_date('m/j/y'); ?>
+	<?php $tags = get_the_tags(); 
+
+	// print_r($tags);?>  <div class="tags_cloud"> 
+	<?php // echo wp_generate_tag_cloud( $tags ); 
+   if ( function_exists( 'nk_wp_tag_cloud' ) ) {
+		echo nk_wp_tag_cloud( 'single=yes' );
+	}
+ ?></div> 
+</div> 
 			   
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
