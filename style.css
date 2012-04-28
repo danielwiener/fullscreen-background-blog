@@ -121,12 +121,25 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	line-height: 30px;
 	font-style: oblique;
 	color: #70BDAD;
-	 width: 200px;
+	 width: 160px;
 	font-weight: bold;
 	text-align: right;
 	-moz-border-radius-bottomleft: 10px;
 	-webkit-border-bottom-left-radius: 10px; 
 	height: auto;
+} 
+
+#content .tags_cloud {
+ 	   line-height: .9em;
+		padding: 5px 0 10px 0;
+		margin: 0;   
+}
+#content .tags_cloud a:link, #content .tags_cloud a:visited {
+	   color: #70BDAD;
+} 
+
+#content .tags_cloud a:hover, #content .tags_cloud a:hover {
+	   color: #FF6600;
 }
 
 /*
@@ -208,10 +221,10 @@ div.menu,
 #wrapper {
 	margin: 0 auto; 
 	padding: 0;
-    width: 940px;
+    width: 820px;
   /*width: 750px;*/
 	position: relative;  /*this was the answer to the disabel link problem*/
-	border: 1px solid red;
+/*	border: 1px solid red;*/
    
 }
 #wrapper { 
