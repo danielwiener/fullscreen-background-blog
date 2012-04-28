@@ -16,12 +16,12 @@
                 <div class="date"><?php echo get_the_date('m/j/y'); ?>
 	<?php 
 	$args = array(
-	    'smallest'  => 8,
-	    'largest'   => 22,
-	    'unit'      => 'pt',
+	    'smallest'  => .7,
+	    'largest'   => 1.8,
+	    'unit'      => 'em',
 	    'number'    => 0,
 	    'format'    => 'flat',
-	    'separator' => '\n',
+	    'separator' => ' ',
 	    'orderby'   => 'name',
 	    'order'     => 'ASC',
 	    'topic_count_text_callback'  => 'default_topic_count_text',
