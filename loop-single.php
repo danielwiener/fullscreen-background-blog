@@ -14,13 +14,17 @@
 
 				
                 <div class="date"><?php echo get_the_date('m/j/y'); ?>
-	<?php $tags = get_the_tags(); 
+	<?php $tags = get_the_tags();
+	$lm_tag_slug = '';
+foreach($tags as $lm_tag) {
+	$tags[ $lm_tag->term_id ]->link = get_tag_link($lm_tag->term_id); //$tags[ $key ]->link The key is the term_id !!!!
+} 
 
 	// print_r($tags);?>  <div class="tags_cloud"> 
-	<?php // echo wp_generate_tag_cloud( $tags ); 
-   if ( function_exists( 'nk_wp_tag_cloud' ) ) {
-		echo nk_wp_tag_cloud( 'single=yes' );
-	}
+	<?php  echo wp_generate_tag_cloud( $tags ); 
+   // if ( function_exists( 'nk_wp_tag_cloud' ) ) {
+   // 		echo nk_wp_tag_cloud( 'single=yes' );
+   // 	} 
  ?></div> 
 </div> 
 			   
