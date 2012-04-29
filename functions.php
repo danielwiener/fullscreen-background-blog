@@ -76,7 +76,7 @@ function numeric_pagination ($pageCount = 5, $query = null) {
 <?php } ?>
 	</div>
 <?php } /* end of pagination */ 
-// add_action('wp_head', 'dw_get_category'); 
+ add_action('wp_head', 'dw_get_category'); 
 function dw_get_category() {
 	global $post;
 	$categories = get_the_category($post->ID);
@@ -84,7 +84,7 @@ function dw_get_category() {
 			foreach ($categories as $category) {
 			$dw_category_slug = $category->slug;
 			$dw_category_name = $category->name;
-		}
+		} //foreach
 		} else {
 		$dw_category_slug = 'utopia';
 		}         

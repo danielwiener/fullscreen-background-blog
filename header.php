@@ -49,10 +49,14 @@
 	 * as styles, scripts, and meta tags.
 	 */
 	wp_head();
-    global $dw_category_name; //need this so that I can use the variable in single.php so now in theory there is one query for categories.
-	$the_post_cats = dw_get_category();
-	$dw_category_name = $the_post_cats['name'];
-	$dw_category_slug = $the_post_cats['slug']; 	         
+    // global $dw_category_name; //need this so that I can use the variable in single.php so now in theory there is one query for categories.
+  	//   $the_post_cats = dw_get_category();
+  	// $dw_category_name = $the_post_cats['name'];
+  	// $dw_category_slug = $the_post_cats['slug'];   
+      $dw_category = dw_get_category();
+		if ( is_front_page() ) {
+			$dw_category['slug'] = 'news';
+		}
 
 ?> 
 <!-- <link rel="stylesheet" href="<?php bloginfo("stylesheet_directory"); ?>/css/supersized.css" type="text/css" media="screen" /> -->
@@ -69,7 +73,7 @@ jQuery(document).ready(function($)  {
 			startheight: 3,
 		     vertical_center: 1,
 			slides : [
-				{image : '<?php bloginfo("stylesheet_directory"); ?>/images/<?php echo $dw_category_slug; ?>.jpg' }
+				{image : '<?php bloginfo("stylesheet_directory"); ?>/images/<?php echo $dw_category['slug']; ?>.jpg' }
 			]
 		};
         $('#supersized').supersized(); 
@@ -84,7 +88,8 @@ jQuery(document).ready(function($)  {
 	</script>
 </head>
  
-<body>
+<body> 
+	<?php // print_r($dw_category['slug']); ?>
 	<div id="supersized"></div> 
 	<div id="header">
 				<div id="site-title">

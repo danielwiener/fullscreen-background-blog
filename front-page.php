@@ -1,13 +1,18 @@
 <?php
 /**
- * The loop that displays posts.
+ * Front Page - displays posts from News category
  *
  *
  * @package WordPress
  * @subpackage Fullscreen Background Blog
  * @since Fullscreen Background Blog 1.0
  */
-?>
+
+get_header(); ?>
+
+		<div id="container">
+			<div id="content" role="main">  
+				<h1 class="page-title">News</h1>
 
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() ) : ?>
@@ -29,7 +34,12 @@
 	?>
 <?php 
             global $wp_query;
-			$args = array_merge( $wp_query->query, array( 'category_name' => 'news' ) );
+			$args = array_merge( $wp_query->query, array( 
+				'category_name' 	=> 'news',
+				'post-type'		    => 'post',
+				'post-status'		=> 'publish',
+				) 
+				);
 			query_posts( $args );
 
 			while ( have_posts() ) : the_post(); ?>
@@ -44,3 +54,11 @@
 			</div><!-- .entry-summary -->
         </div><!-- #post-## -->
 <?php endwhile; // End the loop. Whew. ?>
+
+<?php if ( $wp_query->max_num_pages > 1 ) : ?>
+<div class="date">Pages</div> 
+<div class="post"><?php numeric_pagination(); ?></a></div> 
+<?php endif; ?>
+</div><!-- #content -->
+</div><!-- #container -->
+<?php get_footer(); ?>
