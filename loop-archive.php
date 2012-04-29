@@ -44,9 +44,12 @@
 			    'filter'    => 1 );
 				$tags = get_the_tags(); 
 					$lm_tag_slug = '';
-				foreach($tags as $lm_tag) {
-					$tags[ $lm_tag->term_id ]->link = get_tag_link($lm_tag->term_id); //$tags[ $key ]->link The key is the term_id !!!!
-				}
+					if ( $tags ) {
+						$lm_tag_slug = '';
+						foreach($tags as $lm_tag) {
+							$tags[ $lm_tag->term_id ]->link = get_tag_link($lm_tag->term_id); //$tags[ $key ]->link The key is the term_id !!!!
+						} //foreach
+					} // if
  			
 		   
 

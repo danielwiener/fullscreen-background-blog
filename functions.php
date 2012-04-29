@@ -7,6 +7,15 @@
  * @since Fullscreen Background Blog 1.0
  */
 
+/**
+ * Set the content width based on the theme's design and stylesheet.
+ *
+ * Used to set the width of images and content. Should be equal to the width the theme
+ * is designed for, generally via the style.css stylesheet.
+ */
+if ( ! isset( $content_width ) )
+	$content_width = 600;
+
 /* Numeric Pagination *******************************************
 
 This if from the Gravy template by Darren Hoyt. http://www.darrenhoyt.com 

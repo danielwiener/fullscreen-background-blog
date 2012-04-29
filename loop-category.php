@@ -42,11 +42,13 @@
 			    'topic_count_text_callback'  => 'default_topic_count_text',
 			    'topic_count_scale_callback' => 'default_topic_count_scale',
 			    'filter'    => 1 );
-				$tags = get_the_tags(); 
+				$tags = get_the_tags();
+				if ( $tags ) {
 					$lm_tag_slug = '';
-				foreach($tags as $lm_tag) {
-					$tags[ $lm_tag->term_id ]->link = get_tag_link($lm_tag->term_id); //$tags[ $key ]->link The key is the term_id !!!!
-				}
+					foreach($tags as $lm_tag) {
+						$tags[ $lm_tag->term_id ]->link = get_tag_link($lm_tag->term_id); //$tags[ $key ]->link The key is the term_id !!!!
+					} //foreach
+				} // if
  			
 		   
 

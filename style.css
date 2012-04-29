@@ -759,7 +759,7 @@ div.menu li {
 .entry-content,
 .entry-summary {
 	clear: both;
-	padding: 12px 0 0 20px;
+	padding: 12px 10px 0 20px;
 }
 #content .entry-summary p:last-child {
 	margin-bottom: 12px;
