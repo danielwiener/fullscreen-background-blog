@@ -11,12 +11,12 @@ License URI: license.txt
 Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu, fullscreen, SuperSized
 */
 /*
-* #70BDAD - dark blue - headlines and links for next/previous OLD	
-* #E43A00 - red, for links, for big category title 
-* #CDCDDF - light blue  
-* new torqouise blue - #70BDAD 
-* darker torquoise - #70BDAD 
-* Lenore Orange - #FF6600
+* #03075F - dark blue - headlines and links for next/previous
+* #E43A00 - red, for links, for big category title
+* #CDCDDF - light blue 
+* new torqouise blue - #03075F 
+* darker torquoise - #03075F 
+* Lenore Orange - #E43A00
 */
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
@@ -120,7 +120,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	font-size: 12px;
 	line-height: 30px;
 	font-style: oblique;
-	color: #70BDAD;
+	color: #03075F;
 	 width: 160px;
 	font-weight: bold;
 	text-align: right;
@@ -135,11 +135,11 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 		margin: 0;   
 }
 #content .tags_cloud a:link, #content .tags_cloud a:visited {
-	   color: #70BDAD;
+	   color: #03075F;
 } 
 
 #content .tags_cloud a:hover, #content .tags_cloud a:hover {
-	   color: #FF6600;
+	   color: #E43A00;
 }
 
 /*
@@ -250,7 +250,7 @@ div.menu,
 	margin-right: 20px;
     width: 220px; 
 	background-color:#fff;
-	border-bottom: 2px solid #70BDAD; 
+	border-bottom: 2px solid #03075F; 
 }
 
 #footer-widget-area ul{
@@ -276,16 +276,24 @@ div.menu,
 	font-weight: bold;
 	width: 100%; 
 	padding: 10px 10px 10px 10px;
-	background-color: #6C998E;
+	background-color: #cccccc;
 	/*background-color:rgba(0,0,0,0.25);*/ 
 
-}
+} 
+
+#site-info a:link, #site-info a:visited  {
+	color: #03075F; /*dark blue*/
+	}  
+	
+#site-info a:hover, #site-info a:active  {
+	color: #E43A00; /*dark blue*/
+	} 
 #site-generator {
 	float: right;
 	/*width: 400px;*/
 	/*padding: 10px 10px 10px 0;*/ 
 	margin-right: 20px;
-    color: #FF6600;
+    color: #666;
 }
 
 
@@ -406,15 +414,15 @@ textarea {
 	padding: 2px;
 }
 a:link {
-	color: #FF6600;
+	color: #E43A00;
 	text-decoration: none;
 }
 a:visited {
-	color: #FF6600;
+	color: #E43A00;
 }
 a:active,
 a:hover {
-	color: #70BDAD;
+	color: #03075F;
 	text-decoration: none;
 }
 
@@ -450,14 +458,14 @@ div#site-title  {
 	  font-size: 20px;
 }
 #site-title a:link, #site-title a:visited {
-	color: #FF6600 ; /*Lenore Orange*/
+	color: #03075F ; /*dark blue*/
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
 }   
 
 #site-title a:hover, #site-title a:active, #site-description ul li a:hover, #site-description ul li a:active  {
-	color: #70BDAD !important;  /*Lenore Orange*/
+	color: #E43A00 !important;  /*highlight red*/
 	text-decoration: none;
 }
 #site-description {
@@ -486,7 +494,7 @@ div#site-title  {
 
 #site-description ul li a:link, #site-description ul li a:visited {   /*this is for the menu*/
 	text-decoration: none;
-	color: #FF6600 ;   /*Lenore Orange*/
+	color: #03075F ; /*dark blue*/
 } 
 
 #searchform {
@@ -496,8 +504,7 @@ padding: 1% 4% 0 0;
 }   
 
 #searchform .searchfield {  
-	background: #FFF4ED !important;  /*light lenore orange*/
-	/*background: #CDCDDF !important;*/  /*light blue*/
+	background: #CDCDDF !important;  /*light blue */
 	padding:5px;
 	border-width:1px;
 	border-style:solid;
@@ -508,9 +515,8 @@ padding: 1% 4% 0 0;
 	
 	.button {
 		padding: 6px 10px;
-		background:#FF6600; /* Lenore Orange */  
-		color: #efe !important;
-		/*color:#CDCDDF ;*/  /*light blue*/
+		background:#03075F ; /*dark blue*/ 
+	    color:#CDCDDF !important;  /*light blue*/
 		font-size:1.2em;
 		font-weight: bold;
 		border-width:1px;
@@ -663,7 +669,7 @@ div.menu li {
 #content h4,
 #content h5,
 #content h6 {
-	color: #70BDAD;
+	color: #03075F;
 	line-height: 1.5em;
 	margin: 0 0 20px 0;
 }
@@ -702,7 +708,7 @@ div.menu li {
 	margin: 0 0 36px 0;
 }
 .page-title {
-	color: #FF6600 !important;
+	color: #E43A00 !important;
 	font-size: 35px;
 	font-weight: bold;
 	margin: 0 0 36px 0;
@@ -718,31 +724,31 @@ div.menu li {
 }
 .page-title a:link,
 .page-title a:visited {
-	color: #FF6600	;
+	color: #E43A00	;
 	text-decoration: none;
 }
 .page-title a:active,
 .page-title a:hover {
-	color: #70BDAD;
+	color: #03075F;
 }
 #content .entry-title {
-	color: #70BDAD;
+	color: #03075F;
 	font-size: 21px;
 	font-weight: bold;
 	padding: 4px 0 4px 20px;
 	/*line-height: 1.3em;*/
 	margin: 0;
-	border-bottom: 1px solid #70BDAD;
+	border-bottom: 1px solid #03075F;
    line-height: 30px;
 }
 .entry-title a:link,
 .entry-title a:visited {
-	color: #70BDAD;
+	color: #03075F;
 	text-decoration: none;
 }
 .entry-title a:active,
 .entry-title a:hover {
-	color: #FF6600;
+	color: #E43A00;
 }
 .entry-meta {
 	color: #888;
@@ -1046,7 +1052,7 @@ img.aligncenter {
 -------------------------------------------------------------- */
 
 .navigation {
-	color: #FF6600;
+	color: #E43A00;
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: bold;
@@ -1054,12 +1060,12 @@ img.aligncenter {
 }
 .navigation a:link,
 .navigation a:visited {
-	color: #FF6600;
+	color: #E43A00;
 	text-decoration: none;
 }
 .navigation a:active,
 .navigation a:hover {
-	color: #70BDAD;
+	color: #03075F;
 }
 .nav-previous {
 	float: left;
@@ -1091,7 +1097,7 @@ img.aligncenter {
 }
 #nav-below {
 	margin: -18px 0 0 0;
-	border-top: 1px solid #70BDAD;;
+	border-top: 1px solid #03075F;;
 }
 
 
@@ -1332,7 +1338,7 @@ h3#reply-title {
 	margin: 0 0 18px 0;
 }
 .widget-title {
-	color: #70BDAD;
+	color: #03075F;
 	font-weight: bold;
 }
 .widget-area a:link,
@@ -1416,7 +1422,7 @@ h3#reply-title {
 #footer {
 	margin: 0px;
    /* border: 1px solid red; */  
-	border-top: 2px solid #70BDAD;
+	border-top: 2px solid #03075F;
 }
 #colophon {
 	margin-top: -4px;
@@ -1428,7 +1434,7 @@ h3#reply-title {
 	font-weight: bold;
 }
 #site-info a {
-	color: #FF6600;
+	color: #E43A00;
 	text-decoration: none;
 }
 #site-generator {
@@ -1437,7 +1443,7 @@ h3#reply-title {
 	padding: 0 0 10px 0;
 }
 #site-generator a {
-	color: #FF6600;
+	color: #E43A00;
 	display: inline-block;
 	line-height: 16px;
 	text-decoration: none;
