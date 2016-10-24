@@ -63,7 +63,29 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 
-
+<script type="text/javascript" src="<?php bloginfo("stylesheet_directory"); ?>/js/supersized.3.0.core.js"></script> 
+<script type="text/javascript"> 
+jQuery.noConflict(); 
+// when the DOM is ready
+jQuery(document).ready(function($)  {
+		$.fn.supersized.options = {  
+			startwidth: 4,  
+			startheight: 3,
+		     vertical_center: 1,
+			slides : [
+				{image : '<?php bloginfo("stylesheet_directory"); ?>/images/<?php echo $dw_category['slug']; ?>.jpg' }
+			]
+		};
+        $('#supersized').supersized(); 
+    });
+</script>
+<script type="text/javascript" src="<?php bloginfo("stylesheet_directory"); ?>/js/equal_heights.js"></script> 
+<script type="text/javascript">
+		 jQuery.noConflict();
+		jQuery(document).ready(function() {
+	jQuery('#footer-widget-area').equalHeights(true);
+	});
+	</script>
 </head>
  
 <body> 

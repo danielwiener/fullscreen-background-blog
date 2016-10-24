@@ -302,7 +302,7 @@ div.menu,
 
 /* Main global 'theme' and typographic styles */
 body {
-	background:#000;
+	background:#fff;
 }
 body,
 input,
@@ -450,7 +450,8 @@ a:hover {
 	margin: 0;
 	padding: 5px 20px 0 20px;
 	width: 180px; 
-	background-color:rgba(255,255,255,0.85);
+	background-color:rgba(150,150,150,0.45); /*light-gray*/
+/*	background-color:rgba(255,255,255,0.85);*/
 	height: 85px;
 	position: absolute;  
 	}
@@ -475,8 +476,8 @@ div#site-title  {
 	margin: 0;
 	margin: 0 0 0 221px;
     width: 84%; 
-	/*background-color:rgba(150,150,150,0.45);*/ /*light-gray*/
-	background-color:rgba(255,255,255,0.85); 
+	background-color:rgba(150,150,150,0.45); /*light-gray*/
+/*	background-color:rgba(255,255,255,0.85); */
 	height: 85px;
 }  
 
